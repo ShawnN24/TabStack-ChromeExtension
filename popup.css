@@ -1,0 +1,204 @@
+.popupContainer {
+  width: 300px;
+  margin: 0px;
+}
+
+.headerSeparator {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: lightgrey;
+}
+
+.separator {
+  padding: 10px;
+}
+
+.separatorCur {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: x-large;
+  padding: 5px;
+}
+
+.headerTxt1 {
+  padding-left: 5px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.headerTxt2 {
+  font-weight: 300;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.info {
+  padding-bottom: 2px;
+}
+
+[data-tooltip]:hover::after {
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 5px;
+  width: 275px;
+  content: attr(data-tooltip);
+  border: 1px solid #dee2e6;
+  background: #f7f7f7;
+  padding: .5em;
+  font-size: small;
+  border-radius: 10px;
+}
+
+.classVars {
+  flex: 1;
+  padding: .4rem;
+  padding-left: 1rem;
+  margin-left: .3rem;
+  margin-right: .3rem;
+  border: 1px solid #dee2e6;
+  border-radius: 15px;
+}
+
+.formLabel {
+  font-weight: 700;
+  font-size: medium;
+}
+
+.buttonContainer {
+  display: flex;
+  padding: 10px;
+}
+
+.addButton {
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  transition: border 0.3s ease-in;
+  font-size: medium;
+  background: #ecd09e;
+}
+.addButton:hover {
+  background:rgb(223, 193, 141);
+}
+.addButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.divButton {
+  border-width: 0px;
+  border-radius: 10px;
+}
+
+.toggle {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 3px;
+  display: flex;
+  justify-content: space-between;
+  background: green;
+}
+
+
+
+
+.tabBar {
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px solid rgb(245, 245, 245);
+}
+
+.tabButton {
+  background: white;
+  border: none;
+  padding: 5px 27px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-right: 2px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tabButton:hover {
+  background:rgb(250, 250, 250);
+}
+
+.tabButton.active {
+  background:rgb(245, 245, 245);
+}
+
+.tabListContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ecd09e;
+  padding: 5px 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid rgb(223, 193, 141);
+  border-bottom: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.closeTab {
+  background: #ecd09e;
+  border: none;
+  border-radius: 100px;
+  color:rgb(70, 70, 70);
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 8px;
+  float: right;
+}
+.closeTab:hover {
+  background:rgb(223, 193, 141);
+}
+
+.reopenTab {
+  background: #ecd09e;
+  border: none;
+  border-radius: 100px;
+  color:rgb(70, 70, 70);
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 8px;
+  float: right;
+}
+.reopenTab:hover {
+  background:rgb(223, 193, 141);
+}
+
+.tabItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.stackEnd {
+  display: flex;
+  background: #ecd09e;
+  padding: 1px;
+  border: 1px solid rgb(223, 193, 141);
+  border-bottom: none;
+}

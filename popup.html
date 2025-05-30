@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tab Saver</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body class="popupContainer">
+    <header>
+        <div class="headerDiv">
+            <div class="headerDiv">
+                <img src="icon.png" width=35px height=35px>
+                <label class="headerTxt1">TAB</label>
+                <label class="headerTxt2">Stack</label>
+            </div>
+            <div class="info" data-tooltip="Save and view stacks of tabs for easy access!">
+                <img class="info" src="info.png" width=15px height=15px>
+            </div>
+        </div>
+    </header>
+    <div class="tabBar">
+        <button class="tabButton active" id="saveToggle">Save Tabs</button>
+        <button class="tabButton" id="viewToggle">View Saved Tabs</button>
+    </div>
+
+    <div id="save">
+        <div style="background-color: rgb(245, 245, 245); display: flex; padding-bottom: 5px;">
+            <input class="classVars" id="stackName" maxlength="50" placeholder="Stack Name">
+        </div>
+        <div id="tabList"></div>
+        <div class="buttonContainer">
+            <button class="addButton" id="addStack">Save TabStack</button>
+        </div>
+    </div>
+
+    <div id="view" style="background-color: rgb(240, 240, 240);">
+        <div id="savedTabList"></div>
+    </div>
+    <script src="popup.js" defer></script>
+</body>
+</html>
