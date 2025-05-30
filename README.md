@@ -1,4 +1,4 @@
-# TabStack Chrome Extension
+# ![PortFlow Banner](https://raw.githubusercontent.com/ShawnN24/TabStack-ChromeExtension/refs/heads/main/icon.png) TabStack Chrome Extension
 
 **TabStack** is a Chrome extension that lets you save, view, and manage groups of browser tabs ("tab stacks") for easy retrieval later. Quickly save your current open tabs as a named stack, reopen saved stacks, and keep your browsing organized.
 
